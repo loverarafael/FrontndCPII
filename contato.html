@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../FrontEndCPII/css/style.css">
+    <title>Contato</title>
+</head>
+<body>
+    <header>
+        <h1>CONHEÇA POUSO ALEGRE</h1>
+    </header>
+    <div class="container">
+        <h2>Informe seus dados e escolha os lugares que deseja visitar:</h2>
+        <div class=formulario>
+            <form action="/cadastrar" name="cadastro-usuario" method="post">
+                <fieldset form="cadastro-usuario">
+                    <!--um grupo/conjunto de campos-->
+                    <legend>Dados Pessoais</legend>
+
+                    <div>
+                        <label for="nome">Nome:</label>
+                        <input type="text" name="nome" id="nome" maxlength="100" placeholder="Insira o nome">
+                    </div>
+
+                    <div>
+                        <label for="email">E-mail:</label>
+                        <input type="email" name="email" id="email" placeholder="Insira o email">
+                    </div>
+
+                    <div>
+                        <label for="phone">Telefone:</label>
+                        <input type="number" name="phone" id="phone" maxlength="10" placeholder="DDD + número">
+                    </div>
+
+                    <div>
+                        <label for="idade">Idade:</label>
+                        <input type="number" name="idade" id="idade" placeholder="Insira a idade">
+                    </div>
+
+                    <div>
+                        <label for="date">Data nascimento:</label>
+                        <input type="date" name="data" id="data">
+                    </div>
+
+
+                </fieldset>
+
+                <fieldset form="cadastro-usuario">
+                    <legend>Você é maior ou menor de idade</legend>
+                    <div><label>Tem mais de 18 anos?</label></div>
+                    <input type="radio" id="maioridade" name="maioridade" value="sim" checked>
+                    <label>Sim</label>
+                    <input type="radio" id="maioridade" name="maioridade" value="nao">
+                    <label>Não</label>
+
+                </fieldset>
+
+                <fieldset form="cadastro-usuario">
+                    <!--outro grupo/conjunto de campos-->
+                    <legend>Informações </legend>
+
+                    <div>
+                        <label for="lugares">Lugares que deseja visitar:</label>
+                        <select name="lugares" id="lugar">
+                            <option value="0">Escolha uma opção</option>
+                            <option value="0">Mercado Municipal</option>
+                            <option value="1">Estadio Manduzão</option>
+                            <option value="2">Horto Florestal</option>
+
+                        </select>
+                    </div>
+                    <div>
+                        <label for="interesse">Qual o motivo de estar aqui?:</label>
+                        <input type="checkbox" id="interesse" name="interesse">
+                        <label for="interesse">Turista</label>
+                       
+                        <input type="checkbox" id="interesse" name="interesse">
+                        <label for="ineresse">Residente</label>
+                      
+                        <input type="checkbox" id="interesse" name="interesse">
+                        <label for="interesse">Estudante</label>
+
+                    </div>
+
+                    
+                </fieldset>
+
+                <div class="buttons-div">
+                    <button type="reset">Limpar</button>
+                    <button type="submit">Cadastrar</button>
+                </div>
+
+        </div>
+        </form>
+        <footer id="rodape">
+            <a href="https://www.instagram.com/prefeituradepousoalegre/?hl=pt"><img src="../FrontEndCPII/img/instagram.png" width="60px"
+                    alt="Icone Instagram"></a>
+            <a href="https://www.youtube.com/user/camaradepousoalegre"><img src="../FrontEndCPII/img/youtube.png" width="60px"
+                    alt="Icone youtube"></a>
+                    <a href="index.html" target="_blank"><button type="button" id="voltar">< Voltar </button>
+                </footer>
+    </div>
+</body>
+
+</html>
